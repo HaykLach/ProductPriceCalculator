@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <form method="post" id="price-form" action="{{ path('check-price') }}">
+        <label for="product_list">Select Product:</label>
+        <select id="product_list" name="product">
+            <option value="headphones">Headphones</option>
+            <option value="phone_case">Phone case</option>
+        </select>
+        <br>
+        <label for="tax_number">Tax Number:</label>
+        <input type="text"  id="tax_number" name="tax_number">
+        <br>
+        <p  id="response" class="response-text"></p>
+        <input type="submit" id="check-price" value="Submit">
+    </form>
+
+{% endblock %}
+
+{% block scripts %}
+    <script src="{{ asset('js/main.js') }}"></script>
+{% endblock %}

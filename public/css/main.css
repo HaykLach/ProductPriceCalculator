@@ -1,0 +1,26 @@
+form {
+    width: 300px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+input, select {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+input[type="submit"] {
+    background-color: blue;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer;
+}
+.response-text {
+    display: none;
+}
